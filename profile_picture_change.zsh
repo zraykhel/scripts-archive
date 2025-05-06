@@ -19,8 +19,8 @@ sleep 1
 cp /Users/$LOGIN/Desktop/source.jpg /Library/User\ Pictures/source.heic
 sleep 1
 
-# Set new avatar
-dscl . create /Users/$LOGIN Picture /Library/User\ Pictures/source.heic
+# Set new avatar and apply permissions to make it visible to user (otherwise it shows empty)
+dscl . create /Users/$LOGIN Picture /Library/User\ Pictures/source.heic && chmod 644 /Library/User\ Pictures/source.heic
 STATUS=$?
 
 if [ $? -eq 0 ]; then
