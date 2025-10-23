@@ -1,6 +1,5 @@
-# Simple external display attribute based on SPDisplaysDataType
-# Computer and built-in display info is filtered out
-# Only models and resolutions of connected external displays are shown
+# Simple Bluetooth device extension attribute based on SPBluetoothDataType
+# Shows all info on connected and once paired devices while filtering out computer info
 
 #!/bin/bash
 
