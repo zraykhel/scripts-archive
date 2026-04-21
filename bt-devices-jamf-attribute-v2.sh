@@ -1,7 +1,7 @@
+#!/bin/bash
+
 # Simple Bluetooth device extension attribute based on SPBluetoothDataType
 # Shows all info on connected and once paired devices while filtering out computer info
-
-#!/bin/bash
 
 # Identify CPU arch
 CPUCheck=`system_profiler SPHardwareDataType | grep "efficiency"`
