@@ -1,4 +1,6 @@
-#! /bin/python3
+#!/bin/python3
+
+# Basic FTP dictionary attack script
 
 import ftplib
 server=input("FTP Server:")
