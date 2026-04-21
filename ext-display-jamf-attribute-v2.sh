@@ -1,9 +1,9 @@
+#!/bin/bash
+
 # Simple external display attribute based on SPDisplaysDataType
 # Computer and built-in display info is filtered out
 # Only models and resolutions of connected external displays are shown
 # Does not filter well Intel devices older than 2019
-
-#!/bin/bash
 
 # Identify CPU arch
 CPUCheck=`system_profiler SPHardwareDataType | grep "efficiency"`
@@ -24,4 +24,4 @@ elif [[ ! $CPUCheck =~ "efficiency" ]]; then
 	echo -e "<result>[+] Connected:\n$Intel</result>"
 else
 	echo "<result>[x] Failed to identify CPU</result>"
-fi 
+fi
