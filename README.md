@@ -1,3 +1,3 @@
-# scripts_dump
+# scripts-archive
 
-Small archive of scripts I wrote and accumulated over time. Some have been used at work, others writen just for an exercise.
+Small personal archive of scripts I wrote and accumulated over time. Some were written for work, others just for an exercise. The repo may also contain scrtipts of others that I found useful.
