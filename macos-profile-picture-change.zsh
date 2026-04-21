@@ -2,7 +2,7 @@
 
 ### Allows to change account picture when 'Users & Groups' settings tab is locked by MDM
 ### Removes the previous picture, copies the new one to the special directory, converts it into .heic, sets it and sends a custom message back to the MDM server
-### Works only on the account the user is currently logged into
+### Works on currently active local accounts (given the user is logged into one account only)
 
 # Get logged-in user
 LOGIN=$(users)
