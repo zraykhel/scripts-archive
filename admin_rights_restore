@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Set argument 4 in a Jamf policy to the target username
+# Get the username from the argument
+username=$4
+
+# Check if the user exists
+if ! id "$username" &>/dev/null; then
+    echo "User $username does not exist."
+    exit 1
+fi
+
+# Add the user to the admin group
+dseditgroup -o edit -a "$username" -t user admin
+
+# Check if the user is successfully added to the admin group
+if [ $? -eq 0 ]; then
+    echo "User $username successfully added to the admin group."
+else
+    echo "Failed to add user $username to the admin group."
+fi
